@@ -2,7 +2,7 @@
 
 **Date:** 2026-10-11
 
-**Status:** Partial — ClientFlow foundation + live Supabase/RLS verified and committed locally; remote push still unverified
+**Status:** In progress / mostly complete for Day 02 ClientFlow foundation — code + RLS verified and pushed; Day 03 product scope remains
 
 ## Objective
 
@@ -54,13 +54,15 @@
 | ClientFlow manual vertical slice | Verified live | Org + client persisted; Next logs show createOrganization/createClient 200; DB `manual_slice_db_ok: YES`. |
 | ClientFlow RLS integration | Verified live | `npm run test:integration` — cross-tenant denial passed (~2.5s). |
 | Conventional commit (docs) | Verified | [`a13e586`](https://github.com/hangndat/engineering-portfolio/commit/a13e586b2160347d22b4de979670bc634d487cad) — `docs: compress full portfolio roadmap into nine days` |
-| Conventional commit (ClientFlow) | Verified (local) | `9d520ad` — `feat(clientflow): establish authenticated tenant foundation` in `/Users/admin/SideProject/clientflow` (not pushed). |
+| Conventional commit (ClientFlow) | Verified on GitHub | [`9d520ad`](https://github.com/hangndat/clientflow/commit/9d520ad) — `feat(clientflow): establish authenticated tenant foundation` |
+| ClientFlow remote push | Verified | https://github.com/hangndat/clientflow — `main` pushed |
+| Portfolio hub push (Day 02 evidence) | Verified | https://github.com/hangndat/engineering-portfolio — includes progress update |
 
 ## Unresolved risks and unverified outcomes
 
 - **Schedule risk:** Compressing original 90-day outcomes into Days 02–09 is an extreme stretch; feasibility is not guaranteed.
 - **ClientFlow environment proof:** Foundation code exists; live auth demo and RLS integration against a real Supabase project remain outstanding.
-- **ClientFlow git evidence:** Local commit `9d520ad` exists; remote push still unverified.
+- **ClientFlow git evidence:** Commit `9d520ad` is on GitHub `hangndat/clientflow` `main`.
 - **Deployment / secrets / CI:** Production-minded releases for three apps plus a portfolio website may exceed available time; failures must stay **In progress / Blocked / Partial**, not silently green.
 - **Day 01:** Completion evidence remains valid and is not retroactively expanded to cover Day 02–09 work.
 
