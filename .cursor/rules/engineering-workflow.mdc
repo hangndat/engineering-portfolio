@@ -1,11 +1,13 @@
 ---
-description: Shared AI-assisted engineering workflow for this documentation portfolio
+description: Single source of AI coding rules for this documentation portfolio (Cursor-only)
 alwaysApply: true
 ---
 
 # Engineering workflow
 
 This repository is a documentation hub for planned showcase projects. It is **not** the ClientFlow, RelayOps, or DocPilot application source.
+
+**AI tooling:** Cursor is the only AI development assistant for this repository. Do not assume Claude Code or other assistants are part of the workflow.
 
 ## Language
 
@@ -16,7 +18,8 @@ This repository is a documentation hub for planned showcase projects. It is **no
 
 - Prefer small vertical slices with explicit acceptance criteria.
 - Prefer simplicity and maintainability; avoid new dependencies, broad scaffolding, and speculative abstractions.
-- Inspect relevant context before editing; preserve existing layout and naming.
+- Before changing files, inspect the relevant repository context and summarize the intended scope and validation method.
+- Preserve the existing directory layout and naming conventions. If requirements are ambiguous, state assumptions and choose a safe, reversible approach.
 - Treat AI output as untrusted until reviewed and verified.
 - Never fabricate features, test passes, metrics, deployments, client outcomes, or commit evidence.
 
@@ -33,4 +36,6 @@ This repository is a documentation hub for planned showcase projects. It is **no
 4. Report commands run and observed results; disclose checks that could not run.
 5. Update progress docs when required; suggest a conventional commit — do not claim the commit exists until verified.
 
-Full workflow: `docs/ai-assisted-development.md`. Keep this rule aligned with root `CLAUDE.md`.
+## Loop
+
+Follow **Plan → Implement → Test → Review → Commit**. Full workflow: `docs/ai-assisted-development.md`. Active execution plan: `roadmap/9-day-full-scope.md` (calendar compression; keep original quality gates). App-specific rules belong in each app repository, not in this portfolio hub.

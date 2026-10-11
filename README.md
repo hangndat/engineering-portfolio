@@ -4,19 +4,21 @@
 
 This repository is the central index for three independently developed showcase projects. The goal is to demonstrate engineering judgment through working software, clear technical decisions, automated verification, and reproducible deployments — not through code volume or AI-generated claims.
 
-**Engineer:** [GitHub profile](https://github.com/hangndat)  
-**Experience:** 10+ years in backend engineering, APIs, distributed systems, and technical leadership  
-**Working approach:** Vertical slices, code review, tests, documentation, and observable systems
+**Engineer:** [GitHub profile](https://github.com/hangndat)
+**Experience:** 10+ years in backend engineering, APIs, distributed systems, and technical leadership
+**Working approach:** Vertical slices, Cursor-assisted implementation with human review, tests, documentation, and observable systems
+
+**Current plan:** [9-day full-scope execution roadmap](roadmap/9-day-full-scope.md) — calendar compression of the original 90-day outcomes, **not** a reduced toy-MVP scope (Cursor only)
 
 ## Showcase projects
 
-| Project | Product | Engineering evidence to demonstrate | Status |
-| --- | --- | --- | --- |
-| [ClientFlow](projects/clientflow.md) | SaaS client portal | Authorization, data isolation, usability, delivery pipeline | Planned |
-| [RelayOps](projects/relayops.md) | Webhook & API automation hub | Delivery guarantees, idempotency, retries, observability | Planned |
-| [DocPilot](projects/docpilot.md) | AI document intelligence | Secure ingestion, structured output, evaluation, cost control | Planned |
+| Project | Product | Full-scope evidence focus | Sprint days | Status |
+| --- | --- | --- | --- | --- |
+| [ClientFlow](projects/clientflow.md) | SaaS client portal | Auth, roles, tenant isolation, clients/projects/documents, polished dashboard, CI, deploy, demo, case study | 02–03 | Planned |
+| [RelayOps](projects/relayops.md) | Webhook & API automation hub | Signed ingest, idempotency, async delivery, retries/DLQ, ops UI, metrics, CI, deploy, demo, case study | 04–05 | Planned |
+| [DocPilot](projects/docpilot.md) | AI document intelligence | Secure PDF pipeline, schema-validated extraction, grounded Q&A, eval, cost/latency, CI, deploy, demo, case study | 06–07 | Planned |
 
-Project pages explain intended capabilities and acceptance criteria. They **do not** imply that features or deployments are already complete.
+Days 08–09 cover cross-project polish, personal portfolio website, and freelance launch assets. Project pages describe the **full showcase requirements**. They **do not** imply that features or deployments are already complete.
 
 ## What clients can expect
 
@@ -42,16 +44,17 @@ No fabricated metrics, performance claims, client outcomes, or deployment URLs.
 
 ## Roadmap and engineering notes
 
-- [90-day execution roadmap](roadmap/90-day-plan.md)
+- [9-day full-scope execution roadmap](roadmap/9-day-full-scope.md)
 - [Day 01 progress log](progress/day-01.md)
-- [AI-assisted development workflow](docs/ai-assisted-development.md)
+- [Day 02 progress log](progress/day-02.md)
+- [AI-assisted development workflow](docs/ai-assisted-development.md) (Cursor only)
 - [ADR-001: Portfolio positioning](decisions/ADR-001-portfolio-positioning.md)
 - [Daily review template](templates/daily-review.md)
 - [Case study template](templates/case-study.md)
 
 ## Portfolio status
 
-**Baseline established:** 2026-10-11. The three showcase applications are planned; implementation and validation are tracked separately. Dates in the roadmap represent planned development days, not verified completion.
+**Baseline established:** 2026-10-11. Day 01 GitHub positioning is verified complete. Days 02–09 remain open under the nine-day **full-scope** compression plan; implementation evidence is tracked in `progress/`. Sprint days are development sessions, not automatic calendar days. Extreme schedule risk is documented in the roadmap — incomplete work stays incomplete until verified.
 
 ---
 
