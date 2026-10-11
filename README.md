@@ -44,6 +44,7 @@ No fabricated metrics, performance claims, client outcomes, or deployment URLs.
 
 - [90-day execution roadmap](roadmap/90-day-plan.md)
 - [Day 01 progress log](progress/day-01.md)
+- [AI-assisted development workflow](docs/ai-assisted-development.md)
 - [ADR-001: Portfolio positioning](decisions/ADR-001-portfolio-positioning.md)
 - [Daily review template](templates/daily-review.md)
 - [Case study template](templates/case-study.md)

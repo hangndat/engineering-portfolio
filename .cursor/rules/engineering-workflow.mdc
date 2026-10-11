@@ -1,0 +1,36 @@
+---
+description: Shared AI-assisted engineering workflow for this documentation portfolio
+alwaysApply: true
+---
+
+# Engineering workflow
+
+This repository is a documentation hub for planned showcase projects. It is **not** the ClientFlow, RelayOps, or DocPilot application source.
+
+## Language
+
+- Talk to the developer in Vietnamese.
+- Write code, README files, technical docs, commit messages, and comments in clear professional English.
+
+## Working style
+
+- Prefer small vertical slices with explicit acceptance criteria.
+- Prefer simplicity and maintainability; avoid new dependencies, broad scaffolding, and speculative abstractions.
+- Inspect relevant context before editing; preserve existing layout and naming.
+- Treat AI output as untrusted until reviewed and verified.
+- Never fabricate features, test passes, metrics, deployments, client outcomes, or commit evidence.
+
+## Safety
+
+- Do not read, print, or commit credentials, tokens, private env files, or unrelated personal data.
+- Do not run destructive commands, change remotes, commit, or push unless the developer explicitly asks.
+
+## Completion checklist
+
+1. Match acceptance criteria to the actual diff.
+2. Review for correctness, security, accidental changes, and readability.
+3. For documentation-only work: validate relative Markdown links and run `git diff --check` (also `--cached` when staged).
+4. Report commands run and observed results; disclose checks that could not run.
+5. Update progress docs when required; suggest a conventional commit — do not claim the commit exists until verified.
+
+Full workflow: `docs/ai-assisted-development.md`. Keep this rule aligned with root `CLAUDE.md`.
