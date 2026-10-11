@@ -2,7 +2,7 @@
 
 **Date:** 2026-10-11
 
-**Status:** In progress — portfolio docs migration verified locally; ClientFlow foundation and commits not verified
+**Status:** In progress — portfolio docs migration committed; ClientFlow foundation not verified
 
 ## Objective
 
@@ -28,7 +28,7 @@
 - [x] `docs/ai-assisted-development.md` describes a Cursor-only Plan → Implement → Test → Review → Commit loop.
 - [x] Cursor Agent can correctly report language, commit, verification, and documentation-check rules without editing files.
 - [x] Relative Markdown links and `git diff --check` are verified; unresolved risks are recorded.
-- [ ] A conventional commit for this docs migration exists and its SHA is recorded.
+- [x] A conventional commit for this docs migration exists and its SHA is recorded.
 
 ### ClientFlow foundation (separate implementation repository)
 
@@ -48,14 +48,14 @@
 | Human review | Verified (local) | Docs reviewed for full-scope consistency (not toy MVP); Day 01 evidence untouched; no dependencies added. |
 | Tooling change | Recorded | Cursor-only: `CLAUDE.md` removed; Claude Code requirements dropped. |
 | ClientFlow foundation | Unverified | No ClientFlow application repository or auth slice evidence in this session. |
-| Conventional commit (docs) | Pending | Suggested: `docs: compress full portfolio roadmap into nine days` — not created in this session per request. |
+| Conventional commit (docs) | Verified | [`a13e586`](https://github.com/hangndat/engineering-portfolio/commit/a13e586b2160347d22b4de979670bc634d487cad) — `docs: compress full portfolio roadmap into nine days` |
 
 ## Unresolved risks and unverified outcomes
 
 - **Schedule risk:** Compressing original 90-day outcomes into Days 02–09 is an extreme stretch; feasibility is not guaranteed.
 - **ClientFlow Day 02 foundation:** Not started/verified; Day 02 cannot be marked complete until foundation AC and evidence exist (or are explicitly deferred with impact recorded).
 - **Deployment / secrets / CI:** Production-minded releases for three apps plus a portfolio website may exceed available time; failures must stay **In progress / Blocked / Partial**, not silently green.
-- **GitHub publication:** Docs migration commit and any ClientFlow commits are unverified until SHA/URLs exist on the remote.
+- **GitHub publication:** Docs migration commit `a13e586` exists locally; remote push and ClientFlow commits remain unverified until confirmed on GitHub.
 - **Day 01:** Completion evidence remains valid and is not retroactively expanded to cover Day 02–09 work.
 
 ## Review notes
