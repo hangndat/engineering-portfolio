@@ -2,7 +2,7 @@
 
 **Date:** 2026-10-12
 
-**Status:** ClientFlow **P0 blockers complete** (code + live migration apply + tests). Full roadmap Day 03 product scope (projects/documents/deploy/demo) **not started**.
+**Status:** ClientFlow **P0 complete** + **product slices implemented** (clients/projects/documents/portal/activity, local RLS gate, Playwright E2E). Hosted product migration apply + production deploy/demo video still open.
 
 ## Objective
 
@@ -21,9 +21,12 @@ Resolve two P0 blockers recorded at Day 02 close:
 - [x] Unit tests for origin/callback; integration tests for org INSERT denial + membership escalation.
 - [x] lint / typecheck / unit / integration / build verified locally (exit 0).
 - [x] Live SQL migration applied (SQL editor: `Success. No rows returned`; post-apply probe verified).
-- [ ] Fresh local Supabase migration reset (CLI/Docker not configured).
-- [ ] Manual browser auth onboarding in this session.
-- [ ] Roadmap Day 03 product features (projects/documents/polish/deploy/demo) — deferred until P0 review.
+- [x] Fresh local Supabase migration reset (`npx supabase db reset`) with `pg_policies` INSERT count = 0.
+- [x] Browser auth callback cookie persistence (Playwright + Cursor browser).
+- [x] Product slices: Client CRUD, Projects, Documents, Portal, Activity, dashboard polish.
+- [x] Non-skippable integration release workflow added (secretless CI preserved).
+- [ ] Hosted apply of `20261012010000_product_core.sql`.
+- [ ] Production deployment evidence + demo video.
 
 ## Verification evidence
 
