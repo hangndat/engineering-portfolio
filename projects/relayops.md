@@ -20,7 +20,7 @@ Webhook delivery is easy to demo and difficult to run reliably. RelayOps accepts
 
 ## Day 04 evidence
 
-- Implementation repository: https://github.com/hangndat/relayops (pending first push)
+- Implementation repository: https://github.com/hangndat/relayops
 - Local path: `../relayops`
 - Review: `relayops/docs/day-04-review.md`
 
