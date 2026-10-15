@@ -5,7 +5,7 @@
 | ClientFlow | Yes | Yes | Yes (web) | No | Yes |
 | RelayOps | Yes | Yes | Yes (web console); API local/docker | No | Yes |
 | DocPilot | Yes | Yes | Partial | No | Yes |
-| Portfolio website | Yes (source) | Buildable | Optional follow-up | n/a | n/a |
+| Portfolio website | Yes | Buildable | Yes — https://hangndat-portfolio.vercel.app | n/a | n/a |
 | Freelance assets | Yes | n/a | n/a | n/a | n/a |
 
 ## Outstanding before “fully launched”

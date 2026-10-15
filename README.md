@@ -20,7 +20,7 @@
 
 ## Portfolio website
 
-Source: [`website/`](website/) — personal landing page linking the three projects.
+Live: [https://hangndat-portfolio.vercel.app](https://hangndat-portfolio.vercel.app) · source [`website/`](website/)
 
 ## Freelance readiness
 
