@@ -15,7 +15,7 @@ This repository is the central index for three independently developed showcase 
 | Project | Product | Full-scope evidence focus | Sprint days | Status |
 | --- | --- | --- | --- | --- |
 | [ClientFlow](projects/clientflow.md) | SaaS client portal | Auth, roles, tenant isolation, clients/projects/documents, polished dashboard, CI, deploy, demo, case study | 02–03 | Shipped (demo video outstanding) |
-| [RelayOps](projects/relayops.md) | Webhook & API automation hub | Signed ingest, idempotency, async delivery, retries/DLQ, ops UI, metrics, CI, deploy, demo, case study | 04–05 | Day 04 foundation complete |
+| [RelayOps](projects/relayops.md) | Webhook & API automation hub | Signed ingest, idempotency, async delivery, retries/DLQ, ops UI, metrics, CI, deploy, demo, case study | 04–05 | Day 05 ops complete (demo/hosted API partial) |
 | [DocPilot](projects/docpilot.md) | AI document intelligence | Secure PDF pipeline, schema-validated extraction, grounded Q&A, eval, cost/latency, CI, deploy, demo, case study | 06–07 | Planned |
 
 Days 08–09 cover cross-project polish, personal portfolio website, and freelance launch assets. Project pages describe the **full showcase requirements**. They **do not** imply that features or deployments are already complete.
@@ -49,6 +49,7 @@ No fabricated metrics, performance claims, client outcomes, or deployment URLs.
 - [Day 02 progress log](progress/day-02.md)
 - [Day 03 progress log](progress/day-03.md)
 - [Day 04 progress log](progress/day-04.md)
+- [Day 05 progress log](progress/day-05.md)
 - [AI-assisted development workflow](docs/ai-assisted-development.md) (Cursor only)
 - [ADR-001: Portfolio positioning](decisions/ADR-001-portfolio-positioning.md)
 - [Daily review template](templates/daily-review.md)
