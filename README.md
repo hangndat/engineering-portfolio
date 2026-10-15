@@ -14,8 +14,8 @@ This repository is the central index for three independently developed showcase 
 
 | Project | Product | Full-scope evidence focus | Sprint days | Status |
 | --- | --- | --- | --- | --- |
-| [ClientFlow](projects/clientflow.md) | SaaS client portal | Auth, roles, tenant isolation, clients/projects/documents, polished dashboard, CI, deploy, demo, case study | 02–03 | Planned |
-| [RelayOps](projects/relayops.md) | Webhook & API automation hub | Signed ingest, idempotency, async delivery, retries/DLQ, ops UI, metrics, CI, deploy, demo, case study | 04–05 | Planned |
+| [ClientFlow](projects/clientflow.md) | SaaS client portal | Auth, roles, tenant isolation, clients/projects/documents, polished dashboard, CI, deploy, demo, case study | 02–03 | Shipped (demo video outstanding) |
+| [RelayOps](projects/relayops.md) | Webhook & API automation hub | Signed ingest, idempotency, async delivery, retries/DLQ, ops UI, metrics, CI, deploy, demo, case study | 04–05 | Day 04 foundation complete |
 | [DocPilot](projects/docpilot.md) | AI document intelligence | Secure PDF pipeline, schema-validated extraction, grounded Q&A, eval, cost/latency, CI, deploy, demo, case study | 06–07 | Planned |
 
 Days 08–09 cover cross-project polish, personal portfolio website, and freelance launch assets. Project pages describe the **full showcase requirements**. They **do not** imply that features or deployments are already complete.
@@ -47,6 +47,8 @@ No fabricated metrics, performance claims, client outcomes, or deployment URLs.
 - [9-day full-scope execution roadmap](roadmap/9-day-full-scope.md)
 - [Day 01 progress log](progress/day-01.md)
 - [Day 02 progress log](progress/day-02.md)
+- [Day 03 progress log](progress/day-03.md)
+- [Day 04 progress log](progress/day-04.md)
 - [AI-assisted development workflow](docs/ai-assisted-development.md) (Cursor only)
 - [ADR-001: Portfolio positioning](decisions/ADR-001-portfolio-positioning.md)
 - [Daily review template](templates/daily-review.md)
@@ -54,7 +56,7 @@ No fabricated metrics, performance claims, client outcomes, or deployment URLs.
 
 ## Portfolio status
 
-**Baseline established:** 2026-10-11. Day 01 GitHub positioning is verified complete. Days 02–09 remain open under the nine-day **full-scope** compression plan; implementation evidence is tracked in `progress/`. Sprint days are development sessions, not automatic calendar days. Extreme schedule risk is documented in the roadmap — incomplete work stays incomplete until verified.
+**Baseline established:** 2026-10-11. Days 01–04 have verified progress logs. ClientFlow production deploy is live; RelayOps Day 04 foundation is local+CI-ready. Remaining Day 05–09 work stays incomplete until verified. Sprint days are development sessions, not automatic calendar days.
 
 ---
 

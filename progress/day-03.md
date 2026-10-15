@@ -1,53 +1,42 @@
-# Day 03 — ClientFlow P0 Blockers (RLS + Auth Callback)
+# Day 03 — ClientFlow Product + Release
 
-**Date:** 2026-10-12
+**Date:** 2026-10-12 → closeout 2026-10-15
 
-**Status:** ClientFlow **P0 complete** + **product slices implemented** (clients/projects/documents/portal/activity, local RLS gate, Playwright E2E). Hosted product migration apply + production deploy/demo video still open.
+**Status:** ClientFlow Day 03 **complete** for product + production deploy evidence. Demo video still outstanding.
 
 ## Objective
 
-Resolve two P0 blockers recorded at Day 02 close:
-
-1. Organization INSERT RLS policy drift (repo vs live / intended RPC-only bootstrap).
-2. Authentication callback origin and redirect handling.
+Complete ClientFlow product slices and release evidence: P0 RLS/auth fixes, clients/projects/documents/portal/activity, CI gates, hosted migrations, production deploy, case study.
 
 ## Acceptance criteria
 
 ### ClientFlow (`../clientflow`)
 
-- [x] Audit + remediation plan written (`docs/day-03-remediation-plan.md`).
-- [x] Forward migration `20261012000000_align_organizations_insert_rpc_only.sql` (RPC-only org bootstrap; no rewrite of applied migrations).
-- [x] Auth callback uses trusted allow-listed origin; safe `next`; PKCE cookies on redirect response.
-- [x] Unit tests for origin/callback; integration tests for org INSERT denial + membership escalation.
-- [x] lint / typecheck / unit / integration / build verified locally (exit 0).
-- [x] Live SQL migration applied (SQL editor: `Success. No rows returned`; post-apply probe verified).
-- [x] Fresh local Supabase migration reset (`npx supabase db reset`) with `pg_policies` INSERT count = 0.
-- [x] Browser auth callback cookie persistence (Playwright + Cursor browser).
-- [x] Product slices: Client CRUD, Projects, Documents, Portal, Activity, dashboard polish.
-- [x] Non-skippable integration release workflow added (secretless CI preserved).
-- [ ] Hosted apply of `20261012010000_product_core.sql`.
-- [ ] Production deployment evidence + demo video.
+- [x] P0 org INSERT RLS + auth callback trusted origin.
+- [x] Product slices: Client CRUD, Projects, Documents, Portal, Activity.
+- [x] Non-skippable integration release workflow + secretless CI.
+- [x] Hosted migrations through `20261012120000_harden_tenant_integrity.sql`.
+- [x] Production deployment: https://clientflow-blond.vercel.app
+- [x] Auth Site URL / Redirect URLs aligned to production.
+- [x] lint / typecheck / unit / integration (6/6) / build verified.
+- [x] Playwright smoke (`PLAYWRIGHT_CHANNEL=chrome`).
+- [x] Case study + deploy evidence docs (`docs/day-03-review-closeout.md`).
+- [ ] Demo video recording.
 
 ## Verification evidence
 
 | Check | Status | Evidence |
 | --- | --- | --- |
-| Live org INSERT probe (pre-fix) | Direct INSERT `42501`; RPC OK | Behavioral probe 2026-10-12 |
-| Integration RLS org INSERT | Passed | `npm test` — ~3.5s |
-| Unit auth callback / origin | Passed | Included in 30 unit tests |
-| lint / typecheck / build | Passed | exit 0 |
-| CI | Not re-run on GitHub this session | Local scripts match existing workflow |
+| Hosted migrations | Applied | Supabase CLI link + `db push` (2026-10-15) |
+| Production HTTP smoke | Passed | `/` `/login` `/signup` 200; `/auth/callback` 307 |
+| Integration RLS | Passed | `npm run test:integration` — 6 passed |
+| Unit | Passed | 30 passed |
+| E2E smoke | Passed | Playwright + system Chrome |
 
-## Unresolved risks
+## Commits (ClientFlow)
 
-- Preview hosts need both Supabase Redirect URL allow-list and `AUTH_ALLOWED_ORIGINS` / `VERCEL_URL`.
-- Full Day 03 product scope remains large after these P0 fixes.
-
-## Suggested commits (pending approval)
-
-- ClientFlow: `fix(clientflow): align org INSERT RLS and harden auth callback origin`
-- Hub: `docs: record Day 03 ClientFlow P0 blocker remediation`
+- `docs(clientflow): record Day 03 production deploy and closeout` (`abe7c32`)
 
 ## Next session
 
-Review Day 03 P0 results; apply migration if approved; then continue remaining ClientFlow product Day 03 scope or proceed per roadmap after review.
+Day 04 — RelayOps foundation and reliability core (`projects/relayops.md`).

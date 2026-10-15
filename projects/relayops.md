@@ -1,7 +1,7 @@
 # RelayOps — Webhook & API Automation Hub
 
-**Status:** Planned
-**Primary stack:** Spring Boot, PostgreSQL, Redis, Next.js
+**Status:** In progress (Day 04 foundation complete)  
+**Primary stack:** Spring Boot, PostgreSQL, Redis, Next.js  
 **Portfolio role:** Backend architecture, delivery reliability, and operations
 
 **Sprint window:** Days 04–05 of the [9-day full-scope roadmap](../roadmap/9-day-full-scope.md) (reliability core on Day 04; operations UI and release on Day 05)
@@ -18,21 +18,13 @@ Webhook delivery is easy to demo and difficult to run reliably. RelayOps accepts
 4. Integration and failure-path tests, actionable logs/metrics, CI, deployment, and a reproducible failure/recovery demo.
 5. Case study and operating instructions.
 
-## Engineering risks and decisions
+## Day 04 evidence
 
-- Define idempotency behavior and delivery semantics explicitly; do not promise exactly-once delivery.
-- Separate request acceptance from downstream delivery processing.
-- Treat webhook signing, secret handling, and destination validation as security-sensitive.
-- Prefer observable failure paths over hidden retries.
+- Implementation repository: https://github.com/hangndat/relayops (pending first push)
+- Local path: `../relayops`
+- Review: `relayops/docs/day-04-review.md`
 
-## Completion evidence required
+## Outstanding (Day 05)
 
-- Integration tests for duplicate events, retry behavior, failures, and recovery.
-- Documented delivery semantics and state transitions.
-- Metrics or logs sufficient to investigate a delivery attempt.
-- Containerized or reproducible setup and a demo.
-- Written case study explaining trade-offs.
-
-**Implementation repository:** To be linked when created.
-**Live demo:** Not available yet.
-**Case study:** Pending implementation evidence.
+- Operations UI (history/replay/DLQ)
+- Deployment + demo video + case study
